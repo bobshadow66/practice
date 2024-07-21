@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import Logo from "../Assets/Logo.svg";
+//import Logo from "../Assets/Logo.svg";
 import { BsCart2 } from "react-icons/bs";
 import { HiOutlineBars3 } from "react-icons/hi";
 import {
@@ -19,6 +19,7 @@ import ShoppingCartRoundedIcon from "@mui/icons-material/ShoppingCartRounded";
 
 const Navbar = () => {
   const [openMenu, setOpenMenu] = useState(false);
+
   const menuOptions = [
     {
       text: "Home",
@@ -45,7 +46,7 @@ const Navbar = () => {
   return (
     <nav>
       <div className="nav-logo-container">
-        <img src={Logo} alt="Logo" />
+    {/*<img src={Logo} alt="Logo" />*/}
       </div>
       <div className="navbar-links-container">
         <a href="#home">Home</a>
