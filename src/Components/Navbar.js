@@ -30,7 +30,7 @@ const Navbar = () => {
       icon: <InfoIcon />,
     },
     {
-      text: "Testimonials",
+      text: "Testimonial",
       icon: <CommentRoundedIcon />,
     },
     {
@@ -51,7 +51,7 @@ const Navbar = () => {
       <div className="navbar-links-container">
         <a href="#home">Home</a>
         <a href="#about">About</a>
-        <a href="#testimonials">Testimonials</a>
+        <a href="#testimonial">Testimonial</a>
         <a href="#contact">Contact</a>
         <a href="#cart">
           <BsCart2 className="navbar-cart-icon" />
