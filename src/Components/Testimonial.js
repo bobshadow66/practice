@@ -11,11 +11,11 @@ const Testimonial = () => {
           What They're Saying
         </h1>
         <p className="primary-text">
-          {/* You can add additional text here if needed */}
+          {/* Add additional text if needed */}
         </p>
       </div>
       <div className="testimonial-section-bottom">
-        <img src={ProfilePic} alt="Profile" />
+        <img src={ProfilePic} alt="John Doe's Profile" />
         <p>
           Lorem ipsum dolor sit amet consectetur. Non tincidunt magna non et elit. Dolor turpis molestie dui magnis facilisis at fringilla quam.
         </p>
@@ -33,3 +33,4 @@ const Testimonial = () => {
 };
 
 export default Testimonial;
+
