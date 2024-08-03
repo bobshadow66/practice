@@ -64,7 +64,7 @@ const Navbar = () => {
         <button className="primary-button">Book Now</button>
       </div>
       <div className="navbar-menu-container">
-        <Menu />
+        <Menu onClick={() => setOpenMenu(true)} />
       </div>
       <Drawer
         open={openMenu}
