@@ -1,21 +1,26 @@
 import React, { useState } from "react";
 //import Logo from "../Assets/Logo.svg";
-import { BsCart2 } from "react-icons/bs";
-import { HiOutlineBars3 } from "react-icons/hi";
+
+import {
+  Home,
+  Info,
+  ShoppingCartRounded,
+  PhoneRounded,
+  CommentRounded,
+  Menu
+} from '@mui/icons-material'
+
 import {
   Box,
   Drawer,
+  Icon,
   List,
   ListItem,
   ListItemButton,
   ListItemIcon,
   ListItemText,
 } from "@mui/material";
-import HomeIcon from "@mui/icons-material/Home";
-import InfoIcon from "@mui/icons-material/Info";
-import CommentRoundedIcon from "@mui/icons-material/CommentRounded";
-import PhoneRoundedIcon from "@mui/icons-material/PhoneRounded";
-import ShoppingCartRoundedIcon from "@mui/icons-material/ShoppingCartRounded";
+
 
 const Navbar = () => {
   const [openMenu, setOpenMenu] = useState(false);
@@ -23,23 +28,23 @@ const Navbar = () => {
   const menuOptions = [
     {
       text: "Home",
-      icon: <HomeIcon />,
+      icon: <Home />,
     },
     {
       text: "About",
-      icon: <InfoIcon />,
+      icon: <Info />,
     },
     {
       text: "Testimonial",
-      icon: <CommentRoundedIcon />,
+      icon: <CommentRounded />,
     },
     {
       text: "Contact",
-      icon: <PhoneRoundedIcon />,
+      icon: <PhoneRounded />,
     },
     {
       text: "Cart",
-      icon: <ShoppingCartRoundedIcon />,
+      icon: <ShoppingCartRounded />,
     },
   ];
 
@@ -54,12 +59,12 @@ const Navbar = () => {
         <a href="#testimonial">Testimonial</a>
         <a href="#contact">Contact</a>
         <a href="#cart">
-          <BsCart2 className="navbar-cart-icon" />
+          <ShoppingCartRounded />
         </a>
         <button className="primary-button">Book Now</button>
       </div>
       <div className="navbar-menu-container">
-        <HiOutlineBars3 onClick={() => setOpenMenu(true)} />
+        <Menu />
       </div>
       <Drawer
         open={openMenu}
